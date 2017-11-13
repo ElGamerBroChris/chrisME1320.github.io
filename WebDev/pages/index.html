@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../javascript/header.js"></script>
+
+    <title>MNRentals | Dashboard</title>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+
+    <!-- BODY -->
+    <div id="container">
+        <div class="row">
+            <div class="leftColumn col-sm-4">
+
+                <div id="pruebaPHP">
+
+                </div>
+                <div class="card-space">
+                    <!-- LEFT COLUMN-->
+                    <h2>Monthly Summary</h2>
+                    <div class="card-box">
+                        <div class="summary">
+                            <h3>September</h3>
+                            <table width="100%">
+                                <tr>
+                                    <td>Total Income</td>
+                                    <td class="float-right">$3,429.30</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Expenses</td>
+                                    <td class="float-right">$1,320.35</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN-->
+            <div class="rightColumn col-sm-8">
+                <!-- UPCOMING RESERVATIONS -->
+                <div class="col-sm-12">
+                    <div class="card-space">
+                        <h2>Upcoming</h2>
+                        <div class="card-box">
+                            <div class="upcoming-date">
+                                <h3>Sunday, September 10th</h3>
+                            </div>
+                            <div class="upcoming-element">
+                                <div class="upcoming-element-header">
+                                    <span class="detail-house"> Puerta del Coto T5 </span>
+                                </div>
+                                <div class="upcoming-element-details">
+                                    <div>
+                                        <span class="detail-arrival-departure"> Departure </span> •
+                                        <span class="detail-guest-name"> Joseph Smith </span>
+                                    </div>
+                                    <div>
+                                        <span class="detail-nights"></span>
+                                        <span class="detail-guests"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upcoming-element">
+                                <div class="upcoming-element-header">
+                                    <span class="detail-house"> Punta de Playa 87 </span>
+                                </div>
+                                <div class="upcoming-element-details">
+                                    <div>
+                                        <span class="detail-arrival-departure"> Arrival </span> •
+                                        <span class="detail-guest-name"> Elizabeth Roberts</span>
+                                    </div>
+                                    <div>
+                                        <span class="detail-nights"></span>
+                                        <span class="detail-guests"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="upcoming-date">
+                                <h3>Tuesday, September 12th</h3>
+                            </div>
+                            <div class="upcoming-element">
+                                <div class="upcoming-element-header">
+                                    <span class="detail-house"> Punta de Playa 87 </span>
+                                </div>
+                                <div class="upcoming-element-details">
+                                    <div>
+                                        <span class="detail-arrival-departure"> Departure </span> •
+                                        <span class="detail-guest-name"> Elizabeth Roberts </span>
+                                    </div>
+                                    <div>
+                                        <span class="detail-nights"></span>
+                                        <span class="detail-guests"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upcoming-element">
+                                <div class="upcoming-element-header">
+                                    <span class="detail-house"></span>
+                                </div>
+                                <div class="upcoming-element-details">
+                                    <div>
+                                        <span class="detail-arrival-departure"> Arrival </span> •
+                                        <span class="detail-guest-name"> Mary Sun</span>
+                                    </div>
+                                    <div>
+                                        <span class="detail-nights"></span>
+                                        <span class="detail-guests"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /UPCOMING RESERVATIONS -->
+                <!-- TO-DO'S -->
+                <div class="col-sm-12">
+                    <div class="card-space">
+                        <div>
+                            <div>
+                                <h2 style="float:left">To-do's</h2>
+                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ModalToDo" style="float:right">New To-Do</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card-box">
+                            <div class="todo-element">
+                                <div class="todo-body">
+                                    <span class="todo-title">Instalar antiderrapante en escaleras de sótano.</span>
+                                </div>
+                                <div class="details">
+                                    <span class="todo-details">Puerta del Coto T5 • Due September 8th, 2017</span>
+                                </div>
+                            </div>
+
+                            <div class="todo-element">
+                                <div class="body">
+                                    <span class="todo-title">Instalar una cámara en la entrada de la casa para ver que sólo entren las personas autorizadas.</span>
+                                </div>
+                                <div class="details">
+                                    <span class="todo-details">Punta Playa 87 • Due September 10th, 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /TO-DO'S -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body{
+    background-color: #000000 white;
+}
+
+
+h2{
+    font-size: .8em;
+    font-weight: 200;
+}
+h3{
+    font-size: 1.3em;
+}
+
+.card-box{
+    background-color: white;
+    padding: 10px;
+}
+.card-space{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*------  UPCOMING RESERVATIONS ------*/
+
+.upcoming-element{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.upcoming-element-header .detail-house{
+    color: grey;
+}
+
+.upcoming-element-header .detail-options{
+    float: right;
+    font-weight: 200;
+}
+
+.detail-arrival-departure{
+    font-weight: 600;
+}
+
+.upcoming-element-details{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/*------------   TODO'S   ------------*/
+.to-dos .todo-title{
+    font-size: 16px;
+}
+
+.todo-element .todo-details{
+    font-size: 12px;
+    font-weight: 200;
+}
+.todo-element{
+    padding-bottom: 2%;
+    border-bottom: 1px solid #ddd;
+}
+
+td.float-right {
+    float: right;
+}

@@ -1,0 +1,619 @@
+<!-- HEADER -->
+
+<style rel="stylesheet">
+    .main-header {
+        background-color: white;
+        padding-right: 1%;
+        box-shadow: 0px 0px 5px;
+    }
+
+    .main-header .logo {
+        font-size: 3em;
+        padding-left: .4em;
+        color: rgb(55, 125, 253);
+    }
+
+    .nav {
+        padding-top: 4%;
+    }
+
+    .nav-item {
+        padding: 5px;
+    }
+
+    .searchbar {
+        padding: 1%;
+    }
+
+    #container {
+        padding: 1%;
+    }
+
+    .logo a {
+        text-decoration: none;
+    }
+
+    .active-nav {
+        font-weight: 800;
+    }
+
+    .modal h3 {
+        font-size: 1em;
+        font-weight: 200;
+    }
+
+    .modal input {
+        font-size: .7em;
+    }
+
+    .modal select {
+        font-size: .7em;
+
+    }
+</style>
+
+<header class="main-header">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-lg">
+                        <b>NW</b>Rentals</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="float-right">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="property_dashboard.html">Property Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                New
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#ModalReservation">New Reservation</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#ModalClient">New Client</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#ModalPayment">New Payment</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#ModalExpense">New Expense</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#ModalProperty">New Property</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#ModalToDo">New To-do</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal fade" id="ModalReservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Client</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <h3>Client details</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="State" aria-label="State" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Reservation details</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Arrival date" aria-label="Arrival Date" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Departure date" aria-label="Departure Date" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Number of guests" aria-label="Guests" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Total price" aria-label="Price" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Reservation type" aria-label="Reservation type" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Comments" aria-label="Comments" aria-describedby="basic-addon2">
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Create Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ModalClient -->
+<div class="modal fade" id="ModalClient" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Client</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>First Name</h3>
+                                <input id="FName" class="form-control" type="text" placeholder="e.g. John">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Phone Number</h3>
+                                <input id="PhoneNum" class="form-control" type="tel" placeholder="e.g. +1 5144233349">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>City</h3>
+                                <input id="City" class="form-control" type="text" placeholder="e.g. Vancouver">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Country</h3>
+                                <input id="Country" class="form-control" type="text" placeholder="e.g. Canada">
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>Last Name</h3>
+                                <input id="LName" class="form-control" type="text" placeholder="e.g. Smith">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Email</h3>
+                                <input id="Email" class="form-control" type="email" placeholder="e.g. johnsmith@mail.com">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>State</h3>
+                                <input id="State" class="form-control" type="text" placeholder="e.g. British Columbia">
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Create New Client</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ModalPayment -->
+<div class="modal fade" id="ModalPayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Payment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleSelect1">
+                                        <h3>Payer</h3>
+                                    </label>
+                                    <select class="custom-select form-control" id="exampleSelect1">
+                                        <option>Airbnb</option>
+                                        <option>Maria Mejia</option>
+                                        <option>Owner 2</option>
+                                        <option>Employee 1</option>
+                                        <option>Employee 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Amount</h3>
+                                <input id="Amount" class="form-control" type="number" placeholder="e.g. 350.4">
+                                <select class="small custom-select form-control" id="exampleSelect1">
+                                    <option>USD</option>
+                                    <option>MXN</option>
+                                    <option>CAD</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleSelect1">
+                                        <h3>Reservation</h3>
+                                    </label>
+                                    <select class="custom-select form-control" id="exampleSelect1">
+                                        <option>Reservation 1</option>
+                                        <option>Reservation 2</option>
+                                        <option>Reservation 3</option>
+                                        <option>Reservation 4</option>
+                                        <option>Reservation 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <label for="exampleSelect1">
+                                    <h3>Payee</h3>
+                                </label>
+                                <select class="custom-select form-control" id="exampleSelect1">
+                                    <option>Airbnb</option>
+                                    <option selected>Maria Mejia</option>
+                                    <option>Owner 2</option>
+                                    <option>Employee 1</option>
+                                    <option>Employee 2</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Date</h3>
+                                <input id="DateOfPayment" class="form-control" type="date" placeholder="e.g. 15-12-2017">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ModalExpense -->
+<div class="modal fade" id="ModalExpense" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Expense</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>Payer</h3>
+                                <input id="Payer" class="form-control" type="text" placeholder="Write the payer's name">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Date</h3>
+                                <input id="Date" class="form-control" type="date" placeholder="Write the date">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleSelect1">
+                                        <h3>Property</h3>
+                                    </label>
+                                    <select id="Properties" class="custom-select form-control" id="exampleSelect1">
+                                        <option>Property 1</option>
+                                        <option>Property 2</option>
+                                        <option>Property 3</option>
+                                        <option>Property 4</option>
+                                        <option>Property 5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>Amount</h3>
+                                <input id="Amount" class="form-control" type="number" placeholder="Write the amount">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Concept</h3>
+                                <input id="Concept" class="form-control" type="text" placeholder="Write the concept">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ModalProperty -->
+<div class="modal fade" id="ModalProperty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Property</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>Property Name</h3>
+                                <input id="PropertyName" class="form-control" type="text" placeholder="Write the property name">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>City</h3>
+                                <input id="City" class="form-control" type="text" placeholder="Write the city">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>Country</h3>
+                                <input id="Country" class="form-control" type="text" placeholder="Write the country">
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>Address</h3>
+                                <input id="Address" class="form-control" type="text" placeholder="Write the address">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>State</h3>
+                                <input id="State" class="form-control" type="text" placeholder="Write the state">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3>ZipCode</h3>
+                                <input id="ZipCode" class="form-control" type="number" placeholder="Write the zip code">
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ModalToDo -->
+<div class="modal fade" id="ModalToDo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New To-Do</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>Due Date</h3>
+                                <input id="DueDate" class="form-control" type="date" placeholder="Write the due date">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleSelect1">
+                                        <h3>Property</h3>
+                                    </label>
+                                    <select id="Properties" class="custom-select form-control" id="exampleSelect1">
+                                        <option>Property 1</option>
+                                        <option>Property 2</option>
+                                        <option>Property 3</option>
+                                        <option>Property 4</option>
+                                        <option>Property 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <h3>Description</h3>
+                                <input id="LName" class="form-control" type="text" placeholder="Write a description">
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ModalPaymentsList -->
+<div class="modal fade" id="ModalPaymentsList" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <label for="">
+                    <h5 class="modal-title" id="exampleModalLabel">Patty's Payments</h5>
+                    <small>List of payments registered for the reservation selected</small>
+                </label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <table style="width: 100%">
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Payer</th>
+                            <th>Payee</th>
+                            <th>Payment Method</th>
+                        </tr>
+                        <tr>
+                            <td>01-Jan-2017</td>
+                            <td>$430.3</td>
+                            <td>Airbnb</td>
+                            <td>Maria Mejia</td>
+                            <td>Bank Transfer</td>
+                        </tr>
+                        <tr>
+                            <td>01-Jan-2017</td>
+                            <td>$53.1</td>
+                            <td>Airbnb</td>
+                            <td>Silvia Pelayo</td>
+                            <td>Bank Transfer</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ModalPaymentsList-NoPayments -->
+<div class="modal fade" id="ModalPaymentsList-NoPayments" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <label for="">
+                    <h5 class="modal-title" id="exampleModalLabel">Maria's Payments</h5>
+                    <small>List of payments registered for the reservation selected</small>
+                </label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="container">
+                    <div style="text-align:center">
+                        <h3>No Payments Registered</h3>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalPayment" data-dismiss="#ModalPaymentsList-NoPayments">Register Payment</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.card-space{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card-box{
+    background-color: white;
+    padding: 10px;
+}
+
+.yearly-summary-graph img{
+    padding: 20px;
+}

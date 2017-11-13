@@ -1,0 +1,22 @@
+
+
+.search-bar{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}   
+.search-bar p{
+    float: left;
+}
+
+.search-bar input{
+    width: 25%;
+    margin-left: 20px;
+}
+
+.card-space{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

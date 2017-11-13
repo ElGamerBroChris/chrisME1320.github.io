@@ -1,0 +1,35 @@
+.main-header{
+  background-color: white;
+  padding-right: 1%;
+  box-shadow: 0px 0px 5px;
+}
+
+.main-header .logo{
+    font-size: 3em;
+    padding-left: .4em;
+    color: rgb(55, 125, 253);
+}
+
+.nav{
+    padding-top: 4%;
+}
+
+.nav-item{
+  padding: 5px;
+}
+
+.searchbar{
+  padding: 1%;
+}
+
+#container{
+  padding: 1%;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.active-nav{
+  font-weight: 800;
+}
